@@ -15,7 +15,7 @@ Simply execute GNU `make`:
 ```
 make
 ```
-There are two file generated:
+There are two files generated:
 * `kvm-user`
 * `vm.bin`
 
