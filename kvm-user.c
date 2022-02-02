@@ -187,7 +187,7 @@ void kvm_run_vm(struct kvm *kvm)
 struct vcpu *kvm_init_vcpu(struct kvm *kvm, int vcpu_id, void *(*fn)(void *))
 {
 	struct vcpu *vcpu = malloc(sizeof(struct vcpu));
-	vcpu->vcpu_id = 0;
+	vcpu->vcpu_id = vcpu_id;
 	vcpu->vcpu_fd = ioctl(kvm->vm_fd, KVM_CREATE_VCPU, vcpu->vcpu_id);
 
 	if (vcpu->vcpu_fd < 0) {
