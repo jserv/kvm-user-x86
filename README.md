@@ -4,7 +4,7 @@ The work was derived from [this article](http://soulxu.github.io/blog/2014/08/11
 
 ## Prerequisites
 * Intel processor with VT (virtualization technology) extensions or AMD processor with SVM extensions (also called AMD-V)
-  - Enable VT or AMD in advnace.
+  - Enable VT or AMD in advance.
 * Install Linux kernel headers
 ```
 sudo apt-get install linux-headers-generic
